@@ -1,0 +1,22 @@
+  
+{
+    "name": "kros/plates-sections-insertion",
+    "description" : "Plates extension. Insert content into sections.",
+     "homepage" : "https://github.com/kros/PlatesSectionsInsertion",
+     "license" : "GPL-3.0-or-later",
+     "authors" : [{
+             "name" : "Oscar Ruiz",
+             "email" : "ormartin@gmail.com",
+             "homepage" : "https://github.com/kros",
+             "role" : "Developer"
+         }
+     ],
+     "autoload": {
+        "psr-4": {"Kros\\PlatesSectionsInsertion\\": "src/"}
+     },
+     "keywords" : [
+         "plates",
+         "sections",
+         "php"
+     ]   
+ }
