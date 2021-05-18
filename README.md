@@ -64,5 +64,5 @@ echo $t->render(); // finally render the template
 ## Installation
 
 ```
-composer require Kros/PlatesSectionsInsertion
+composer require kros/plates-sections-insertion
 ```
