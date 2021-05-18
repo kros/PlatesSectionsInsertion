@@ -49,7 +49,7 @@ Now we put it together. Remember you can not render before having set the sectio
 <?php
 include "vendor/autoload.php";
 use League\Plates\Engine;
-use Kros\PlatesSectionsInsertions\SectionsInsertion;
+use Kros\PlatesSectionsInsertion\SectionsInsertion;
   
 $engine = new Engine('route/to/templates');
 $engine->loadExtension(new SectionsInsertion());
