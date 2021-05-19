@@ -1,5 +1,5 @@
 <?php
-namespace Kros\PlatesExtension;
+namespace Kros\PlatesSectionsInsertion;
 
 use League\Plates\Engine;
 use League\Plates\Extension\ExtensionInterface;
