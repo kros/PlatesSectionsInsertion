@@ -40,7 +40,7 @@ Hello <?= $name ?>
 Goodbye
 ```
 
-Now we put it together. From the controller we can set the content of a section. Remember you can not render before having set the sections content, so the way to do it is:
+Now we put it together. From inside the controller (<code>index.php</code> file in this case) we can set the content of a section. <b>Remember</b> you can not render before having set the sections content, so the way to do it is:
 * <code>make</code> the template
 * <code>setSectionContent</code> of all the sections you want
 * <code>render</code> finally render the template
@@ -63,7 +63,7 @@ echo $t->render(); // finally render the template
   
 ```
 <p>
- You can even push or unshift the content of a section using the <code>pushSectionContent</code> and <code>unshiftSectionContent</code> methods:
+ You can even push or unshift the content of a section from inside the controller using the <code>pushSectionContent</code> and <code>unshiftSectionContent</code> methods:
 </p>
 
 ```php
