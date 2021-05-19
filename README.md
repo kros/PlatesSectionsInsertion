@@ -51,7 +51,7 @@ Now we put it together. From inside the controller (<code>index.php</code> file 
 <?php
 include "vendor/autoload.php";
 use League\Plates\Engine;
-use Kros\PlatesExtension\SectionsInsertion;
+use Kros\PlatesSectionsInsertion\SectionsInsertion;
   
 $engine = new Engine('route/to/templates');
 $engine->loadExtension(new SectionsInsertion());
