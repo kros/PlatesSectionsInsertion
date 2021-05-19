@@ -12,7 +12,7 @@
 <body>
 <div id='div_header'><?= $this->section('up_section') ?></div><hr />
 <?= $this->section('content') ?>
-<hr /><div id='div_footer'><?= $this->section('down_section') ?></div>
+<hr /><div id='div_footer'><?= $this->section('bottom_section') ?></div>
 </body>
 </html>
 ```
@@ -58,9 +58,18 @@ $engine->loadExtension(new SectionsInsertion());
 
 $t = $engine->make('othertemplate'); /* make the template
 $t->setSectionContent('up_section', 'welcome', ['name'=>'John Doe']); // set content for 'header_section' section (with params)
-$t->setSectionContent('down_section', 'bybye'); // set content for 'footer_section' (without params)
+$t->setSectionContent('bottom_section', 'bybye'); // set content for 'bottom_section' (without params)
 echo $t->render(); // finally render the template
   
+```
+<p>
+ You can even push or unshift the content of a section using the <code>pushSectionContent</code> and <code>unshiftSectionContent</code> methods:
+</p>
+
+```php
+...
+$t->pushSectionContent('up_section', 'welcome', ['name'=>'Mary May']); // push the new content for 'up_section' section behind the actual content.
+$t->unshiftSectionContent('bottom_section', 'bybye'); // unshift the new content for 'bottom_section' section before the actual content.
 ```
 
 ## Installation
@@ -71,9 +80,9 @@ composer require kros/plates-sections-insertion
 
 ## Requirements
 
-<p>Stand alone extension</p>
+<p>Stand alone extension.</p>
 See <code>composer.json</code> file.
 
 ## License
 
-<p>GNU General Public License v3.0 (see the LICENSE file for details)</p>
+<p>GNU General Public License v3.0 (see the LICENSE file for details).</p>
