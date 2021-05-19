@@ -51,7 +51,7 @@ Now we put it together. From the controller we can set the content of a section.
 <?php
 include "vendor/autoload.php";
 use League\Plates\Engine;
-use Kros\PlatesSectionsInsertion\SectionsInsertion;
+use Kros\PlatesExtension\SectionsInsertion;
   
 $engine = new Engine('route/to/templates');
 $engine->loadExtension(new SectionsInsertion());
